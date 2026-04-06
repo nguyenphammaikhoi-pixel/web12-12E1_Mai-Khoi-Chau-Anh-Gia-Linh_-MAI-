@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Massage Thư Giãn Toàn Thân – MɅI SPA</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">M∧</div>
+        <span>MɅI SPA</span>
+      </a>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="shop.html">Cửa hàng</a></li>
+          <li><a href="product.html" class="active">Sản phẩm</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <span class="header-icon">🔍</span>
+        <span class="header-icon">❤️</span>
+        <a href="cart.html" class="header-icon">
+          🛒
+          <span class="cart-count" id="cartBadge" style="display:none;">0</span>
+        </a>
+        <a href="contact.html" class="btn">Đặt Lịch</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header" style="padding: 30px 20px;">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href="index.html">Trang chủ</a> /
+        <a href="shop.html">Cửa hàng</a> /
+        Massage Thư Giãn Toàn Thân
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="product-detail-wrap">
+      <div class="product-detail-image"style="background-image: url('assets/massage\ toàn\ thân.jpg');"></div>
+      <div class="product-detail-info">
+        <span class="product-badge badge-static">HOT</span>
+        <h1>Massage Thư Giãn Toàn Thân</h1>
+        <div class="product-detail-price">
+          450.000đ
+          <span class="product-detail-old">550.000đ</span>
+        </div>
+        <div class="product-meta">
+          <p><strong>Thời gian:</strong> 60 – 90 phút</p>
+          <p><strong>Tình trạng:</strong> Còn lịch trống</p>
+          <p><strong>Danh mục:</strong> Massage toàn thân</p>
+        </div>
+        <p class="product-detail-desc">
+          Trải nghiệm liệu trình massage thư giãn toàn thân được thiết kế riêng để mang lại sự thư giãn tối đa.
+          Sử dụng 100% tinh dầu thiên nhiên kết hợp với kỹ thuật chuyên sâu từ đội ngũ chuyên gia của chúng tôi.
+          Liệu trình giúp giải phóng căng thẳng, cải thiện tuần hoàn máu và mang lại cảm giác nhẹ nhàng, sảng khoái cho toàn bộ cơ thể.
+        </p>
+        <button class="btn w-100" style="padding:16px; font-size:16px;" onclick="addToCart(1,'Massage Thư Giãn Toàn Thân',450000,'💆'); window.location.href='cart.html';">
+          Đặt Lịch Ngay (Thêm vào giỏ)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <h2>Dịch Vụ Liên Quan</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <a href="product.html"></a>
+        <div class="product-image"style="background-image: url('assets/chăm\ da\ mặt.jpg');"></div>
+        <div class="product-info">
+          <a href="product.html" class="product-title">Chăm Sóc Da Mặt Vitamin C</a>
+          <div class="product-price-wrap">
+            <span class="product-price">380.000đ</span>
+            <span class="product-old-price">480.000đ</span>
+          </div>
+          <div class="product-action">
+            <button class="btn-add-cart" onclick="addToCart(2,'Chăm Sóc Da Mặt Vitamin C',380000,'✨')">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product.html"></a>
+        <div class="blog-image" style="background-image: url('assets/thảo\ dược.jpg');"></div>
+        <div class="product-info">
+          <a href="product.html" class="product-title">Ngâm Thảo Dược Toàn Thân</a>
+          <div class="product-price-wrap">
+            <span class="product-price">350.000đ</span>
+          </div>
+          <div class="product-action">
+            <button class="btn-add-cart" onclick="addToCart(3,'Ngâm Thảo Dược Toàn Thân',350000,'🌿')">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product.html">
+          <div class="blog-image" style="background-image: url('assets/massage\ mặt.jpg');"></div>
+          <span class="product-badge">SALE</span>
+        </a>
+        <div class="product-info">
+          <a href="product.html" class="product-title">Massage Mặt Nâng Cơ</a>
+          <div class="product-price-wrap">
+            <span class="product-price">420.000đ</span>
+            <span class="product-old-price">500.000đ</span>
+          </div>
+          <div class="product-action">
+            <button class="btn-add-cart" onclick="addToCart(8,'Massage Mặt Nâng Cơ',420000,'🌺')">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product.html">
+          <div class="blog-image" style="background-image: url('assets/vip.jpg');"></div>
+          <span class="product-badge">VIP</span>
+        </a>
+        <div class="product-info">
+          <a href="product.html" class="product-title">Gói VIP Diamond 3 Buổi</a>
+          <div class="product-price-wrap">
+            <span class="product-price">2.200.000đ</span>
+          </div>
+          <div class="product-action">
+            <button class="btn-add-cart" onclick="addToCart(12,'Gói VIP Diamond 3 Buổi',2200000,'💎')">Thêm vào giỏ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">MɅI SPA</a>
+        <p>Nơi đánh thức vẻ đẹp tự nhiên và mang lại sự thư giãn tuyệt đối cho tâm hồn bạn.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="TikTok">tt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Liên Kết Nhanh</h3>
+        <div class="footer-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Dịch Vụ</h3>
+        <div class="footer-links">
+          <a href="shop.html">Chăm sóc da mặt</a>
+          <a href="shop.html">Massage thư giãn</a>
+          <a href="shop.html">Tắm thảo dược</a>
+          <a href="shop.html">Làm móng nghệ thuật</a>
+          <a href="shop.html">Gói VIP Diamond</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Liên Hệ</h3>
+        <div class="footer-links">
+          <p>📍 Số 1 Đường Raymondienne, Q7, TP.HCM</p>
+          <p>📞 1800-6868</p>
+          <p>✉️ hello@maispa.vn</p>
+          <p>⏰ Thứ 2–Thứ 6: 07:20–16:20</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MɅI SPA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

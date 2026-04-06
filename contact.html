@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên Hệ – MɅI SPA</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">M∧</div>
+        <span>MɅI SPA</span>
+      </a>
+      <nav>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="shop.html">Cửa hàng</a></li>
+          <li><a href="product.html">Sản phẩm</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="contact.html" class="active">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <span class="header-icon">🔍</span>
+        <span class="header-icon">❤️</span>
+        <a href="cart.html" class="header-icon">
+          🛒
+          <span class="cart-count" id="cartBadge" style="display:none;">0</span>
+        </a>
+        <a href="contact.html" class="btn">Đặt Lịch</a>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Liên Hệ</h1>
+      <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="contact-wrap">
+
+      <div class="contact-form">
+        <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" class="form-control" placeholder="Nhập họ và tên của bạn" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="Nhập địa chỉ email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" class="form-control" placeholder="Nhập số điện thoại" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Chủ đề</label>
+            <select id="subject" class="form-control">
+              <option>Tư vấn dịch vụ</option>
+              <option>Đặt lịch hẹn</option>
+              <option>Góp ý / Khiếu nại</option>
+              <option>Khác</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tin nhắn</label>
+            <textarea id="message" class="form-control" placeholder="Nhập nội dung tin nhắn của bạn" required></textarea>
+          </div>
+          <button type="submit" class="btn w-100">Gửi Tin Nhắn</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info">
+          <h3>Thông Tin Liên Hệ</h3>
+          <p>Hãy ghé thăm MɅI SPA để tận hưởng không gian thư giãn tuyệt vời.</p>
+
+          <div class="info-item">
+            <div class="icon">📍</div>
+            <div>
+              <strong>Địa chỉ:</strong>
+              <p>Số 1 Đường Raymondienne, Q7, TP.HCM</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">📞</div>
+            <div>
+              <strong>Điện thoại:</strong>
+              <p>1800-6868 (Miễn phí)</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">✉️</div>
+            <div>
+              <strong>Email:</strong>
+              <p>hello@maispa.vn</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">⏰</div>
+            <div>
+              <strong>Giờ mở cửa:</strong>
+              <p>Thứ 2 – Thứ 6: 07:20 – 16:20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">MɅI SPA</a>
+        <p>Nơi đánh thức vẻ đẹp tự nhiên và mang lại sự thư giãn tuyệt đối cho tâm hồn bạn.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">in</a>
+          <a href="#" aria-label="TikTok">tt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Liên Kết Nhanh</h3>
+        <div class="footer-links">
+          <a href="index.html">Trang chủ</a>
+          <a href="shop.html">Cửa hàng</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">Về chúng tôi</a>
+          <a href="contact.html">Liên hệ</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Dịch Vụ</h3>
+        <div class="footer-links">
+          <a href="shop.html">Chăm sóc da mặt</a>
+          <a href="shop.html">Massage thư giãn</a>
+          <a href="shop.html">Tắm thảo dược</a>
+          <a href="shop.html">Làm móng nghệ thuật</a>
+          <a href="shop.html">Gói VIP Diamond</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Liên Hệ</h3>
+        <div class="footer-links">
+          <p>📍 Số 1 Đường Raymondienne, Q7, TP.HCM</p>
+          <p>📞 1800-6868</p>
+          <p>✉️ hello@maispa.vn</p>
+          <p>⏰ Thứ 2–Thứ 6: 07:20–16:20</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MɅI SPA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong vòng 24 giờ.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
